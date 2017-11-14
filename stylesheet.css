@@ -190,9 +190,10 @@ html {
   font-size: 0;
   text-align: justify;
   border-bottom: 1px solid #ccc;
+  padding: 0 48px;
 }
 
-.head::after { 
+.head::after {
   content: '';
   display: inline-block;
   width: 100%;
@@ -206,11 +207,14 @@ html {
 }
 
 .header-branding {
-  background: green;
+
+  padding: 24px 0;
+  font-size: 18px;
+
 }
 
 .header-navigation {
-  background: blue;
+
 }
 
 .header-menu {
@@ -218,11 +222,20 @@ html {
 }
 
 .header-menu-item {
-  font-size: 18px;
+  font-size: 15px;
   display: inline-block;
+  padding: 0 15px;
 
 }
 
+.header-menu-item.active {
+  color: blue;
+}
+
 .header-newsletter {
-  background: red;
+
+}
+
+.active {
+  color: blue;
 }
