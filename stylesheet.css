@@ -200,7 +200,7 @@ html {
 
 .header-menu {
   padding-bottom: 24px;
-  background: red;
+  background-color:red;
 }
 
 .header-item {
@@ -215,12 +215,12 @@ html {
 }
 
 .header-newsletter{
-  background: green;
+  background-color: green;
 }
 
 .header-branding {
   padding: 24px;
-  background: blue;
+  background-color: blue;
 }
 
 
