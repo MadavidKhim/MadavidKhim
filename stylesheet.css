@@ -1,0 +1,320 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-Black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitneySC';
+  src: url('./assets/font/Whitney-BlackSC.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-BlackItalic.otf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-Bold.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitneySC';
+  src: url('./assets/font/Whitney-BoldSC.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-BoldItalic.otf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-SemiBold.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitneySC';
+  src: url('./assets/font/Whitney-SemiBoldSC.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-SemiBoldItalic.otf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitneySC';
+  src: url('./assets/font/Whitney-MediumSC.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-MediumItalic.otf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-Book.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitneySC';
+  src: url('./assets/font/Whitney-BookSC.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-BookItalic.otf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-Light.otf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitneySC';
+  src: url('./assets/font/Whitney-LightSC.otf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('./assets/font/Whitney-LightItalic.otf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+html {
+  background-color: white;
+  color: #111;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'whitney';
+  line-height: 1.375;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: 0;
+  border-bottom: 1px solid #ccc;
+}
+.header-menu,
+.header-branding {
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.header-menu {
+  padding-bottom: 24px;
+}
+
+.header-item {
+  color: #31b6ef;
+  text-decoration: none;
+  padding: 0 6px;
+  font-weight: 500;
+}
+
+.header-item:hover {
+  color: red;
+}
+
+.header-branding {
+  padding: 24px;
+}
+
+
+.header-branding-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@media all and (min-width: 700px)  {
+  .header {
+    text-align: justify;
+    padding: 0 28px;
+  }
+  .header-branding,
+  .header-menu {
+    width: auto;
+  }
+
+  .header-branding {
+    padding-left: 0;
+  }
+
+  .header-item {
+    padding: 0 24px;
+  }
+
+  .header-item:last-child {
+    padding-right: 0;
+  }
+
+  .header-menu {
+    vertical-align: 4px;
+  }
+
+  .header:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1268px)  {
+  .header {
+    max-width: 1140px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+}
+
+.login {
+  border: 1px solid #ccc;
+  width: 80%;
+  margin: 48px auto 0;
+  padding: 28px 48px;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 8px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form-group-buttons,
+.form-group {
+  margin: 15px 0;
+}
+
+.form-group-buttons {
+  font-size: 0;
+  text-align: justify;
+  margin-top: 40px;
+}
+
+.form-group-buttons:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.form-group-left,
+.form-group-right {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.form-group-login {
+  background: #31b6ef;
+  padding: 15px 28px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0px 5px 20px hsla(198, 79%, 50%, 0.5);
+  transition: all 0.2s ease-out;
+}
+
+.form-group-login:hover {
+  background: red;
+  transition: all 0.2s ease-out;
+}
