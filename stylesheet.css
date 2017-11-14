@@ -192,7 +192,7 @@ html {
   border-bottom: 1px solid #ccc;
 }
 
-.head::after{
+.head::after { 
   content: '';
   display: inline-block;
   width: 100%;
@@ -205,24 +205,24 @@ html {
   display: inline-block;
 }
 
-.header-branding{
+.header-branding {
   background: green;
 }
 
-.header-navigation{
+.header-navigation {
   background: blue;
 }
 
-.header-menu{
+.header-menu {
   font-size: 0;
 }
 
-.header-menu-item{
+.header-menu-item {
   font-size: 18px;
   display: inline-block;
 
 }
 
-.header-newsletter{
+.header-newsletter {
   background: red;
 }
