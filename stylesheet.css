@@ -188,139 +188,39 @@ html {
 
 .header {
   font-size: 0;
+  text-align: justify;
   border-bottom: 1px solid #ccc;
 }
-.header-menu,
-.header-branding {
-  font-size: 18px;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
 
-.header-menu {
-  padding-bottom: 24px;
-  background-color:red;
-}
-
-.header-item {
-  color: #31b6ef;
-  text-decoration: none;
-  padding: 0 6px;
-  font-weight: 500;
-}
-
-.header-item:hover {
-  color: red;
-}
-
-.header-newsletter{
-  background-color: green;
-}
-
-.header-branding {
-  padding: 24px;
-  background-color: blue;
-}
-
-
-.header-branding-title {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-@media all and (min-width: 700px)  {
-  .header {
-    text-align: justify;
-    padding: 0 28px;
-  }
-  .header-branding,
-  .header-menu {
-    width: auto;
-  }
-
-  .header-branding {
-    padding-left: 0;
-  }
-
-  .header-item {
-    padding: 0 24px;
-  }
-
-  .header-item:last-child {
-    padding-right: 0;
-  }
-
-  .header-menu {
-    vertical-align: 4px;
-  }
-
-  .header:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
-}
-
-@media all and (min-width: 1268px)  {
-  .header {
-    max-width: 1140px;
-    padding: 0 0;
-    margin: 0 auto;
-  }
-}
-
-.login {
-  border: 1px solid #ccc;
-  width: 80%;
-  margin: 48px auto 0;
-  padding: 28px 48px;
-}
-
-.form input {
-  width: 100%;
-  padding: 12px 8px;
-}
-
-.form input:focus {
-  outline: none;
-}
-
-.form-group-buttons,
-.form-group {
-  margin: 15px 0;
-}
-
-.form-group-buttons {
-  font-size: 0;
-  text-align: justify;
-  margin-top: 40px;
-}
-
-.form-group-buttons:after {
+.head::after{
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-.form-group-left,
-.form-group-right {
+.header-branding,
+.header-navigation,
+.header-newsletter {
   font-size: 18px;
   display: inline-block;
 }
 
-.form-group-login {
-  background: #31b6ef;
-  padding: 15px 28px;
-  border-radius: 8px;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0px 5px 20px hsla(198, 79%, 50%, 0.5);
-  transition: all 0.2s ease-out;
+.header-branding{
+  background: green;
 }
 
-.form-group-login:hover {
+.header-navigation{
+  background: blue;
+}
+
+.header-menu{
+  font-size: 0;
+}
+
+.header-menu-item{
+
+}
+
+.header-newsletter{
   background: red;
-  transition: all 0.2s ease-out;
 }
